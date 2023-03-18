@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+    font-family: Verdana;
+    background-color: #FCEEDA;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.ghost{
+    width: 24vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* шапка */
+header{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 0 1px 0;
+}
+.logo{
+    width: 2.6%;
+    height: auto;
+}
+.header_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+    margin-top: 3px;
+    font-size: 1vw;
+}
+/* лицо */
+.face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.A{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.28vw;
+    line-height: 50px;
+    /* identical to box height, or 23% */
+    
+    color: #B98A52;
+    
+    filter: blur(7.5px);
+    margin: 192px 0 255px 0;
+}
+.table{
+    position: absolute;
+    left: 510px;
+    top: 323px;
+    width: 37%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #B98A52;
+    font-size: 16px;
+    padding: 223px 0 223px 0;
+}
+.card p{
+    margin: 0 6% 50px 6%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.39vw;
+    line-height: 63px;
+}
+.str{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.str img{
+    width: 24vw;
+    margin: 5px;
+}
+/* товары */
+.product{
+    background-color: #522C17;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+    /* identical to box height, or 208% */
+
+
+    color: #FFFFFF;
+}
+.borders{
+    margin: 30px 0 140px 0;
+    z-index: 10000;
+}
+.cater{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.67vw;
+    line-height: 50px;
+    margin: 60px 0 28px 7.5vw;
+}
+.stick{
+    position: absolute;
+    left: 537px;
+    top: 2157px;
+    width: 25.5%;
+}
+.imgP{
+    width: 20%;
+    filter: brightness(0.6);
+}
+.horizon{
+    width: 46.5%;
+    filter: brightness(0.6);
+}
+.ver{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7.5vw;
+}
+.txt, .txtH, .txtH_right{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 390px;
+}
+.txt{
+        width: 81%;
+        margin-left: 2.4%;
+}
+.txtH{
+    width: 35%;
+    margin-left: 2.4%;
+}
+.txtH_right{
+    width: 35%;
+    margin-left: 48%;
+    
+}
+.txt p, .txtH p, .txtH_right p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4vw;
+}
+/* информация */
+.information{
+    background-color: #230A07;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HEADINF{
+    font-size: 2.78vw;
+    line-height: 10.3vh;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.top{
+    width: 5%;
+    height: 71px;
+    background-color: #230A07;
+    position: absolute;
+    left: 40px;
+    top: 4830px;;
+}
+.name h1, .txtTWO h1{
+    font-size: 2.50vw;
+    font-style: normal;
+    font-weight: 400;
+}
+.name p{
+    font-size: 1.39vw;
+    line-height: 250%;
+    /* or 250% */
+    width: 63%;
+    text-align: center;
+}
+.name1, .name2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.one-el{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.one-el img{
+    height:50px;
+    width: 9%;
+}
+.two-el{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: space-between;
+}
+.two-el img{
+    width: 3.4%;
+}
+.txtTWO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txtTWO p{
+    font-size: 1.39vw;
+    line-height: 250%;
+    /* or 250% */
+
+    text-align: center;
+    width: 32.7%;
+}
+#map {
+    height: 660px;
+    width: 90%;
+    margin: 95px auto;
+}
+/* подвал */
+footer{
+    background-color: #230A07;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 3.8% 40px 3.8%;
+}
+.list{
+    display: flex;
+    width: 41%;
+    justify-content: space-between;
+}
+.heading h1, .heading p, .listmin p{
+    font-style: normal;
+    font-weight: 400;
+}
+.heading h1{
+    font-size: 3.82vw;
+}
+.heading p{
+    font-size: 1.11vw;
+}
+.listmin h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 50px;
+    /* identical to box height, or 312% */
+
+    text-align: right;
+}
+.listmin p{
+    font-size: 1.11vw;
+    line-height: 40px;
+
+    text-align: right;
+}
+@media (min-width: 320px) and (max-width: 375px){
+    .logo{
+        width: 12px;
+    }
+    .header_name{
+        width: 78%;
+    }
+    .A{
+        filter: blur(2.5px);
+        margin: 34px 0 33px 0;
+    }
+    .card{
+        padding: 40px 0 62px 0
+    }
+    .card p{
+        line-height: 20px;
+        margin: 0 6% 13px 6%;
+    }
+    .table{
+        left: 112px;
+        top: 94px;
+    }
+    .str img{
+        margin: 2px;
+    }
+    .stick{
+        left: 122px;
+        top: 502px;
+    }
+    .cater{
+        margin: 0 0 0 7.5vw;
+    }
+    .borders{
+        margin: 0 0 40px 0;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 62px;
+    }
+    .top{
+        left: 15px;
+        top: 1150px;
+    }
+    .HEADINF{
+        margin-top: 10px;
+    }
+    .one-el img{
+        height: 12px;
+    }
+    .two-el img{
+        width: 5%;
+    }
+    .two-el{
+        height: 114px;
+    }
+    #map{
+        margin: 20px auto;
+        height: 300px;
+    }
+    .listmin h3{
+        line-height: 20px;
+    }
+    .listmin p{
+        line-height: 15px;
+    }
+    footer{
+        padding: 11px 3.8% 13px 3.8%;
+    }
+}
