@@ -14,23 +14,82 @@ a{
     color: black;
 }
 /* шапка */
+.header_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+    margin-top: 15px;
+    font-size: 1vw;
+}
 header{
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-around;
     padding: 6px 0 1px 0;
 }
+.menu_small_icon {
+    display: none;
+}
+.stickMENU {
+    width: 80%;
+    height: 2px;
+    background: black;
+}
+.menu-small {
+    display: none;
+    height: 2em;
+}
+.menu_small_item {
+    display: none;
+}
+@media (max-width: 650px) {
+    .header_name {
+        display: none;
+    }
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: #FCEEDA;
+        transform: translateX(100%);
+        font-size: 3.47vw;
+        z-index: 1000;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        z-index: 100000;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        top: 0.6em;
+        right: 1em;
+        width: 15px;
+        height: 10px;
+        display: flex;
+        z-index: 10000;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 .logo{
     width: 2.6%;
     height: auto;
-}
-.header_name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 58%;
-    margin-top: 3px;
-    font-size: 1vw;
 }
 /* лицо */
 .face{
@@ -236,7 +295,7 @@ footer{
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 95px 3.8% 40px 3.8%;
+    padding: 30px 3.8% 50px 3.8%;
 }
 .list{
     display: flex;
@@ -271,6 +330,11 @@ footer{
 @media (min-width: 320px) and (max-width: 375px){
     .logo{
         width: 12px;
+        margin-left: 10px;
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
     }
     .header_name{
         width: 78%;
@@ -334,5 +398,301 @@ footer{
     }
     footer{
         padding: 11px 3.8% 13px 3.8%;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px){
+    .logo{
+        width: 15px;
+        margin-left: 10px;
+    }
+    .header_name a{
+        font-size: 1.5vw;
+    }
+    .header_name{
+        width: 80%;
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .A{
+        margin: 61px 0 55px 0;
+        filter: blur(4.5px);
+    }
+    .card{
+        padding: 40px 0 65px 0;
+    }
+    .card p{
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .str img{
+        margin: 2px;
+    }
+    .table{
+        left: 126px;
+        top: 130px;
+    }
+    .cater{
+        margin: 0 0 0 7.5vw;
+    }
+    .borders{
+        margin: 15px 0 40px 0;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 75px;
+    }
+    .stick{
+        left: 140px;
+        top: 620px;
+    }
+    .one-el img{
+        height: 14px;
+    }
+    .HEADINF{
+        margin-top: 20px;
+    }
+    .two-el img{
+        width: 6%;
+    }
+    .two-el{
+        height: 145px;
+    }
+    #map{
+        margin: 20px auto;
+        height: 300px;
+    }
+    .top{
+        left: 20px;
+        top: 1353px;
+    }
+    .listmin h3{
+        line-height: 17px;
+    }
+    .listmin p{
+        line-height: 15px;
+    }
+    footer{
+        padding: 20px 3.8%;
+    }
+}
+@media (min-width: 425px) and (max-width:767px){
+    .logo{
+        width: 15px;
+        margin-left: 10px;
+    }
+    .header_name a{
+        font-size: 1.5vw;
+    }
+    .header_name{
+        width: 80%;
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .A{
+        margin: 61px 0 55px 0;
+        filter: blur(4.5px);
+    }
+    .card{
+        padding: 55px 0 65px 0;
+    }
+    .card p{
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .str img{
+        margin: 2px;
+    }
+    .table{
+        left: 145px;
+        top: 130px;
+    }
+    .cater{
+        margin: 0 0 0 7.5vw;
+    }
+    .borders{
+        margin: 15px 0 40px 0;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 92px;
+    }
+    .stick{
+        left: 158px;
+        top: 660px;
+    }
+    .one-el img{
+        height: 14px;
+    }
+    .HEADINF{
+        margin-top: 20px;
+    }
+    .two-el img{
+        width: 5%;
+    }
+    .two-el{
+        height: 155px;
+    }
+    #map{
+        margin: 20px auto;
+        height: 300px;
+    }
+    .top{
+        left: 20px;
+        top: 1462px;
+    }
+    .listmin h3{
+        line-height: 17px;
+    }
+    .listmin p{
+        line-height: 15px;
+    }
+    footer{
+        padding: 20px 3.8%;
+    }
+}
+@media (min-width: 768px) and (max-width:1024px){
+    .logo{
+        width: 27px;
+    }
+    .header_name a{
+        font-size: 1.5vw;
+    }
+    .header_name{
+        width: 65%;
+        margin-top: 13px
+    }
+    .A{
+        margin: 120px 0 120px 0;
+        filter: blur(8.5px);
+    }
+    .card{
+        padding: 111px 0 131px 0;
+    }
+    .card p{
+        line-height: 47px;
+        margin-bottom: 45px;
+    }
+    .str img{
+        margin: 4px;
+    }
+    .table{
+        left: 261px;
+        top: 214px
+    }
+    .cater{
+        margin: 20px 0 20px 7.5vw;
+    }
+    .borders{
+        margin: 32px 0 84px 0;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 183px;
+    }
+    .stick{
+        left: 287px;
+        top: 1202px
+    }
+    .one-el img{
+        height: 26px;
+    }
+    .HEADINF{
+        margin-top: 35px;
+    }
+    .two-el img{
+        width: 5%;
+    }
+    .two-el{
+        height: 270px;
+    }
+    #map{
+        margin: 20px auto;
+        height: 300px;
+    }
+    .top{
+        left: 37px;
+        top: 2660px;
+    }
+    .listmin h3{
+        line-height: 17px;
+    }
+    .listmin p{
+        line-height: 25px;
+    }
+    footer{
+        padding: 30px 3.8%;
+    }
+}
+@media (min-width: 1024px) and (max-width:1439px){
+    .logo{
+        width: 27px;
+    }
+    .header_name a{
+        font-size: 1.3vw;
+    }
+    .header_name{
+        width: 65%;
+        margin-top: 13px
+    }
+    .A{
+        margin: 148px 0 148px 0;
+        filter: blur(11.5px);
+    }
+    .card{
+        padding: 131px 0 165px 0;
+    }
+    .card p{
+        line-height: 60px;
+        margin-bottom: 45px;
+    }
+    .str img{
+        margin: 5px;
+    }
+    .table{
+        left: 359px;
+        top: 239px
+    }
+    .cater{
+        margin: 30px 0 30px 7.5vw;
+    }
+    .borders{
+        margin: 44px 0 120px 0;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 252px;
+    }
+    .stick{
+        left: 381px;
+        top: 1487px;
+    }
+    .one-el img{
+        height: 33px;
+    }
+    .HEADINF{
+        margin-top: 50px;
+    }
+    .two-el img{
+        width: 5%;
+    }
+    .two-el{
+        height: 376px;
+    }
+    #map{
+        margin: 40px auto;
+        height: 400px;
+    }
+    .top{
+        left: 40px;
+        top: 3410px;
+    }
+    .listmin h3{
+        line-height: 17px;
+    }
+    .listmin p{
+        line-height: 25px;
+    }
+    footer{
+        padding: 30px 3.8%;
     }
 }
