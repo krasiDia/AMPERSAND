@@ -24,12 +24,15 @@ navigator.geolocation.getCurrentPosition(function(position){
 });
 
 let menu = document.querySelector(".menu_small_icon"); 
+let none_menu = document.querySelector('.menu-small')
 let pos = 0; 
 menu.addEventListener("click", function () { 
   if (pos === 0) { 
     open(); 
   } else { 
     close(); 
+    // if (translateX === '100%'){
+      none_menu.style.display = 'none';
   } 
 }); 
  
@@ -75,6 +78,7 @@ function open() {
         duration: 1000,
         loop: false
     })
+    none_menu.style.display = 'flex';
 } 
 function close() { 
     anime({ 

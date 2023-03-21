@@ -111,9 +111,14 @@ header{
     margin: 192px 0 255px 0;
 }
 .table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: absolute;
-    left: 510px;
-    top: 323px;
+    top: 40.2vh;
+    z-index: 1;
+}
+.table img{
     width: 37%;
 }
 .card{
@@ -168,9 +173,15 @@ header{
     margin: 60px 0 28px 7.5vw;
 }
 .stick{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 330vh;
+    width: 100%;
     position: absolute;
-    left: 537px;
-    top: 2157px;
+    top: 288.2vh;
+}
+.stick img{
     width: 25.5%;
 }
 .imgP{
@@ -227,12 +238,14 @@ header{
     margin-top: 35px;
 }
 .top{
-    width: 5%;
-    height: 71px;
-    background-color: #230A07;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
     position: absolute;
-    left: 40px;
-    top: 4830px;;
+    top: 648vh;
+}
+.top img{
+    width: 5%;
 }
 .name h1, .txtTWO h1{
     font-size: 2.50vw;
@@ -350,17 +363,17 @@ footer{
         line-height: 20px;
         margin: 0 6% 13px 6%;
     }
-    .table{
+    /* .table{
         left: 112px;
         top: 94px;
-    }
+    } */
     .str img{
         margin: 2px;
     }
-    .stick{
+    /* .stick{
         left: 122px;
         top: 502px;
-    }
+    } */
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -370,10 +383,10 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 62px;
     }
-    .top{
+    /* .top{
         left: 15px;
         top: 1150px;
-    }
+    } */
     .HEADINF{
         margin-top: 10px;
     }
@@ -429,10 +442,10 @@ footer{
     .str img{
         margin: 2px;
     }
-    .table{
+    /* .table{
         left: 126px;
         top: 130px;
-    }
+    } */
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -442,10 +455,10 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 75px;
     }
-    .stick{
+    /* .stick{
         left: 140px;
         top: 620px;
-    }
+    } */
     .one-el img{
         height: 14px;
     }
@@ -462,10 +475,10 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    .top{
+    /* .top{
         left: 20px;
         top: 1353px;
-    }
+    } */
     .listmin h3{
         line-height: 17px;
     }
@@ -505,10 +518,10 @@ footer{
     .str img{
         margin: 2px;
     }
-    .table{
+    /* .table{
         left: 145px;
         top: 130px;
-    }
+    } */
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -518,10 +531,10 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 92px;
     }
-    .stick{
+    /* .stick{
         left: 158px;
         top: 660px;
-    }
+    } */
     .one-el img{
         height: 14px;
     }
@@ -538,10 +551,10 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    .top{
+    /* .top{
         left: 20px;
         top: 1462px;
-    }
+    } */
     .listmin h3{
         line-height: 17px;
     }
@@ -577,10 +590,10 @@ footer{
     .str img{
         margin: 4px;
     }
-    .table{
+    /* .table{
         left: 261px;
         top: 214px
-    }
+    } */
     .cater{
         margin: 20px 0 20px 7.5vw;
     }
@@ -590,10 +603,10 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 183px;
     }
-    .stick{
+    /* .stick{
         left: 287px;
         top: 1202px
-    }
+    } */
     .one-el img{
         height: 26px;
     }
@@ -610,10 +623,10 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    .top{
+    /* .top{
         left: 37px;
         top: 2660px;
-    }
+    } */
     .listmin h3{
         line-height: 17px;
     }
@@ -649,10 +662,10 @@ footer{
     .str img{
         margin: 5px;
     }
-    .table{
+    /* .table{
         left: 359px;
         top: 239px
-    }
+    } */
     .cater{
         margin: 30px 0 30px 7.5vw;
     }
@@ -662,10 +675,10 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 252px;
     }
-    .stick{
+    /* .stick{
         left: 381px;
         top: 1487px;
-    }
+    } */
     .one-el img{
         height: 33px;
     }
@@ -682,10 +695,10 @@ footer{
         margin: 40px auto;
         height: 400px;
     }
-    .top{
+    /* .top{
         left: 40px;
         top: 3410px;
-    }
+    } */
     .listmin h3{
         line-height: 17px;
     }
