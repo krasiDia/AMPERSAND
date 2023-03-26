@@ -115,7 +115,7 @@ header{
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 40.2vh;
+    top: calc(40vh + 10px);
     z-index: 1;
 }
 .table img{
@@ -176,10 +176,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 330vh;
+    /* height: 330vh; */
     width: 100%;
     position: absolute;
-    top: 288.2vh;
+    top: 2150px;
 }
 .stick img{
     width: 25.5%;
@@ -340,6 +340,7 @@ footer{
 
     text-align: right;
 }
+
 @media (min-width: 320px) and (max-width: 375px){
     .logo{
         width: 12px;
@@ -363,17 +364,15 @@ footer{
         line-height: 20px;
         margin: 0 6% 13px 6%;
     }
-    /* .table{
-        left: 112px;
+    .table{
         top: 94px;
-    } */
+    }
     .str img{
         margin: 2px;
     }
-    /* .stick{
-        left: 122px;
+    .stick{
         top: 502px;
-    } */
+    }
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -383,10 +382,9 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 62px;
     }
-    /* .top{
-        left: 15px;
-        top: 1150px;
-    } */
+    .top{
+        top: 1152px;
+    }
     .HEADINF{
         margin-top: 10px;
     }
@@ -442,10 +440,9 @@ footer{
     .str img{
         margin: 2px;
     }
-    /* .table{
-        left: 126px;
+    .table{
         top: 130px;
-    } */
+    }
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -455,10 +452,9 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 75px;
     }
-    /* .stick{
-        left: 140px;
-        top: 620px;
-    } */
+    .stick{
+        top: 610px;
+    }
     .one-el img{
         height: 14px;
     }
@@ -475,10 +471,9 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    /* .top{
-        left: 20px;
+    .top{
         top: 1353px;
-    } */
+    }
     .listmin h3{
         line-height: 17px;
     }
@@ -518,10 +513,9 @@ footer{
     .str img{
         margin: 2px;
     }
-    /* .table{
-        left: 145px;
+    .table{
         top: 130px;
-    } */
+    }
     .cater{
         margin: 0 0 0 7.5vw;
     }
@@ -531,10 +525,9 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 92px;
     }
-    /* .stick{
-        left: 158px;
+    .stick{
         top: 660px;
-    } */
+    }
     .one-el img{
         height: 14px;
     }
@@ -551,10 +544,9 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    /* .top{
-        left: 20px;
+    .top{
         top: 1462px;
-    } */
+    }
     .listmin h3{
         line-height: 17px;
     }
@@ -590,10 +582,9 @@ footer{
     .str img{
         margin: 4px;
     }
-    /* .table{
-        left: 261px;
+    .table{
         top: 214px
-    } */
+    }
     .cater{
         margin: 20px 0 20px 7.5vw;
     }
@@ -603,10 +594,9 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 183px;
     }
-    /* .stick{
-        left: 287px;
+    .stick{
         top: 1202px
-    } */
+    }
     .one-el img{
         height: 26px;
     }
@@ -623,10 +613,9 @@ footer{
         margin: 20px auto;
         height: 300px;
     }
-    /* .top{
-        left: 37px;
-        top: 2660px;
-    } */
+    .top{
+        top: 2665px;
+    }
     .listmin h3{
         line-height: 17px;
     }
@@ -662,10 +651,9 @@ footer{
     .str img{
         margin: 5px;
     }
-    /* .table{
-        left: 359px;
+    .table{
         top: 239px
-    } */
+    }
     .cater{
         margin: 30px 0 30px 7.5vw;
     }
@@ -675,10 +663,9 @@ footer{
     .txt, .txtH, .txtH_right{
         margin-top: 252px;
     }
-    /* .stick{
-        left: 381px;
-        top: 1487px;
-    } */
+    .stick{
+        top: 1495px;
+    }
     .one-el img{
         height: 33px;
     }
@@ -695,10 +682,9 @@ footer{
         margin: 40px auto;
         height: 400px;
     }
-    /* .top{
-        left: 40px;
-        top: 3410px;
-    } */
+    .top{
+        top: 3417px;
+    }
     .listmin h3{
         line-height: 17px;
     }
@@ -707,5 +693,181 @@ footer{
     }
     footer{
         padding: 30px 3.8%;
+    }
+}
+@media (width: 640px){  /*Microsoft Lumia 550*/
+    
+    .A{
+        margin: 60px 0 90px 0;
+        filter: blur(4.5px);
+    }
+    .card{
+        padding: 100px 0 110px 0;
+    }
+    .card p{
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .str img{
+        margin: 2px;
+    }
+    .table{
+        top: 130px;
+    }
+    
+    .txt, .txtH, .txtH_right{
+        margin-top: 150px;
+    }
+    .stick{
+        top: 910px;
+    }
+    .one-el img{
+        height: 21px;
+    }
+    .HEADINF{
+        margin-top: 20px;
+    }
+    .two-el img{
+        width: 5%;
+    }
+    .two-el{
+        height: 235px;
+    }
+    
+    .top{
+        top: 1990px;
+    }
+    
+}
+@media (min-width: 400px) and (max-width: 420px){  /*iPhone XR*/
+    .table{
+        top: 122px;
+    }
+    .stick {
+        top: 636px;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 87px;
+    }
+    .top{
+        top: 1423px;
+    }
+    .HEADINF{
+        margin-top: 25px;
+        line-height: 3vh;
+    }
+}
+@media (min-width: 340px) and (max-width: 400px){ /*iPhone 12 Pro*/
+    .stick{
+        top: 620px
+    }
+    .table{
+        top: 125px
+    }
+    .top{
+        top:1377px;
+    }
+    .HEADINF{
+        line-height: 40px;
+    }
+}
+@media (min-width: 340px) and (max-width: 380px){ /*Samsung Galaxy S8*/
+    .table{
+        top: 85px;
+    }
+    .stick{
+        top: 522px;
+    }
+    .top{
+        top:1230px
+    }
+}
+@media (min-width: 800px) and (max-width: 840px){ /*iPad Air*/
+    .stick{
+        top: 1237px;
+    }
+    .top{
+        top: 2765px;
+    }
+    .HEADINF{
+        line-height: 65px;
+    }
+}
+@media (min-width: 890px) and (max-width: 920px){ /*Surface Pro 7*/
+    .card{
+        padding-top: 140px;
+    }
+    .stick{
+        top: 1320px;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 220px;
+    }
+    .top{
+        top: 2973px
+    }
+    .HEADINF{
+        line-height: 70px;
+    }
+    .two-el{
+        height: 320px;
+    }
+}
+@media (width: 540px){ /*Surface Duo*/
+    .table{
+        top: 125px;
+    }
+    .A{
+        margin-bottom: 78px;
+    }
+    .card {
+        padding: 63px 0 86px 0;
+    }
+    .stick{
+        top: 780px;
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 120px;
+    }
+    .top{
+        top: 1728px
+    }
+    .HEADINF{
+        line-height: 55px;
+    }
+    .two-el {
+        height: 200px;
+    }
+}
+@media (min-width: 1260px) and (max-width: 1300px){ /*Nest Hub Max*/
+    .A{
+        margin: 184px 0;
+    }
+    .card {
+        padding: 163px 0 194px 0;
+    }
+    .table{
+        top: 268px;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    .logo{
+        margin-top: 6px;
+    }
+    .stick{
+        top: 1806px
+    }
+    .txt, .txtH, .txtH_right{
+        margin-top: 323px;
+    }
+    .top{
+        top:4048px;
+    }
+    .H{
+        line-height: 75px;
+    }
+    .two-el{
+        height: 450px;
     }
 }
