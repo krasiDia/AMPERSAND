@@ -32,7 +32,7 @@ menu.addEventListener("click", function () {
   } else { 
     close(); 
     // if (translateX === '100%'){
-      none_menu.style.display = 'none';
+      // none_menu.style.display = 'none';
   } 
 }); 
  
@@ -40,15 +40,15 @@ let start = 0;
 let end = 0; 
 let screenWidth = window.screen.width
  
-$(".container").on("touchstart", function (e) { 
+$("body").on("touchstart", function (e) { 
   start = e.originalEvent.touches[0].pageX; 
 }); 
-$(".container").on("touchend", function (e) { 
+$("body").on("touchend", function (e) { 
   end = e.originalEvent.changedTouches[0].pageX; 
   
-  if (end - start >= 100 && pos === 0 && start <= 20) { 
+  if (start - end >= 100 && pos === 0){ 
     open(); 
-  } else if (start - end >= 100 && pos === 1 && start >= screenWidth - 20) { 
+  } else if (end - start >= 100 && pos === 1) { 
     close(); 
   } 
 }); 
