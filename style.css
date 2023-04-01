@@ -9,6 +9,10 @@ body{
 .ghost{
     width: 24vw;
 }
+.picture{
+    transform: none;
+    transition: none;
+}
 a{
     text-decoration: none;
     color: black;
@@ -757,7 +761,7 @@ footer{
         line-height: 3vh;
     }
 }
-@media (min-width: 340px) and (max-width: 400px){ /*iPhone 12 Pro*/
+@media (min-width: 380px) and (max-width: 400px){ /*iPhone 12 Pro*/
     .stick{
         top: 620px
     }
@@ -771,7 +775,7 @@ footer{
         line-height: 40px;
     }
 }
-@media (min-width: 340px) and (max-width: 380px){ /*Samsung Galaxy S8*/
+@media (min-width: 350px) and (max-width: 370px){ /*Samsung Galaxy S8*/
     .table{
         top: 85px;
     }
@@ -780,6 +784,9 @@ footer{
     }
     .top{
         top:1230px
+    }
+    .HEADINF{
+        line-height: 50px;
     }
 }
 @media (min-width: 800px) and (max-width: 840px){ /*iPad Air*/
@@ -871,3 +878,11 @@ footer{
         height: 450px;
     }
 }
+@media (width: 375px){ /*iPhone SE*/
+    .stick{
+        top: 610px;
+    }
+    .table{
+        top: 122px;
+    }
+} 
