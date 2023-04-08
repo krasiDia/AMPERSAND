@@ -28,7 +28,6 @@ navigator.geolocation.getCurrentPosition(function(position){
 let menu = document.querySelector(".menu_small_icon"); 
 let none_menu = document.querySelector('.menu-small');
 let pos = 0; 
-let N = 0;
 menu.addEventListener("click", function () { 
   if (pos === 0) { 
     open(); 
@@ -56,51 +55,40 @@ $("body").on("touchend", function (e) {
 
 // картинки
 let pic = document.querySelectorAll('.picture');
-console.log(pic)
-for (let i =0; i < 8; i++){
-  pic[i].addEventListener('mouseover', function() {
-    pic[i].style.transform = 'scale(1.1)';
-    pic[i].style.transition = '0.5s';
+pic.forEach(function(img){
+  img.addEventListener('mouseover', function() {
+    img.style.transform = 'scale(1.1)';
+    img.style.transition = '0.5s';
+  });
+  img.addEventListener('mouseout', function() {
+    img.style.transform = 'none';
+    img.style.transition = '1s';
   })
-  pic[i].addEventListener('mouseout', function() {
-    pic[i].style.transform = 'none';
-    pic[i].style.transition = '1s';
-  })
-}
+})
 
 // фильтр
-let p = document.querySelectorAll('.imgP');
-let hor = document.querySelectorAll('horizon');
-for (let i =0; i < 13; i++){
-  p[i].addEventListener('mouseover', function() {
-    p[i].style.transform = 'scale(1.1)';
-    p[i].style.transition = '0.5s';
-    p[i].style.filter = 'none';
+let img_product = document.querySelectorAll('.imgP');
+let hor_product = document.querySelectorAll('.horizon');
+img_product.forEach(function(img){
+  filter_remove(img)
+});
+hor_product.forEach(function(img){
+  filter_remove(img)
+});
+function filter_remove(e){
+  e.addEventListener('mouseover', function() {
+    e.style.transform = 'scale(1.1)';
+    e.style.transition = '0.5s';
+    e.style.filter = 'none';
   })
-  p[i].addEventListener('mouseout', function() {
-    p[i].style.transform = 'scale(1.1)';
-    p[i].style.transition = '0.5s';
-    p[i].style.filter = 'brightness(0.6)';
-  })
-}
-for (let i =0; i < 3; i++){
-  hor[i].addEventListener('mouseover', function() {
-    hor[i].style.transform = 'scale(1.1)';
-    hor[i].style.transition = '0.5s';
-    hor[i].style.filter = 'none';
-  })
-  hor[i].addEventListener('mouseout', function() {
-    hor[i].style.transform = 'scale(1.1)';
-    hor[i].style.transition = '0.5s';
-    hor[i].style.filter = 'brightness(0.6)';
+  e.addEventListener('mouseout', function() {
+    e.style.transform = 'none';
+    e.style.transition = '0.5s';
+    e.style.filter = 'brightness(0.6)';
   })
 }
-
-
 // переход по ссылкам
 let menu_a = document.querySelectorAll('.m_a');
-console.log(menu_a)
-
 let targetID; 
 menu_a.forEach(function (element) {
   element.addEventListener('click', function (event) {
@@ -113,15 +101,11 @@ menu_a.forEach(function (element) {
         })
       })
       
-for ( let i = 0; i < 9; i++){ 
-  menu_a[i].addEventListener("click", function () {
+menu_a.forEach(function(img){
+  img.addEventListener("click", function () {
     close();
-  });
-};
-
-
-
-
+  })
+})
 
 function open() { 
     anime({ 
@@ -179,4 +163,3 @@ function close() {
         loop: false
     })
 }
- 
